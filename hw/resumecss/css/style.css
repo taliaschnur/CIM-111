@@ -1,0 +1,12 @@
+body{
+  background-color: lightblue;
+
+}
+p{
+  font-family: sans-serif;
+}
+h2{font-family: sans-serif;}
+li{font-family: sans-serif;}
+address{font-family: sans-serif;}
+a{text-decoration: none;}
+a{color: red}
