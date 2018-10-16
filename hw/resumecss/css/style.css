@@ -1,5 +1,5 @@
 body{
-  background-color: lightblue;
+  background-color: ;
 
 }
 h1{font-family: 'Roboto', sans-serif;}
@@ -12,3 +12,11 @@ address{font-family: 'Robot', sans-serif;}
 a{text-decoration: none;}
 a{color: red}
 a:hover {background-color: yellow;}
+
+#textindent{
+  text-indent: 50px;
+}
+
+.headingColor{
+  color: red;
+}
