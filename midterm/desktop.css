@@ -7,7 +7,7 @@
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 body{
-  background-color: ivory;
+  background-color: azure;
 }
 
 h1{font-family: 'Raleway', sans-serif;
@@ -16,7 +16,7 @@ h1{font-family: 'Raleway', sans-serif;
 
 #grid1{
   display: grid;
-  grid-template-areas: "col1 col2 col3";
+  grid-template-areas: "col1 col2";
   grid-template-rows: 1fr;
   grid-template-columns: 50% 50%;
 }
@@ -25,10 +25,6 @@ h1{font-family: 'Raleway', sans-serif;
   height: auto;
 }
 #col2{
-  grid-area: col2;
-  height: auto;
-}
-#col3{
   grid-area: col2;
   height: auto;
 }
