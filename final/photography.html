@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Our nicely designed website</title>
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 600px)">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
+<!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+
+    <link rel="stylesheet" href="js/lightbox.css">
+
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Zevensuy Rodriguez</h1>
+        <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="writing.html">Writing</a></li>
+              <li><a href="persondesign.html">Person Design</a></li>
+              <li><a href="schooldesign.html">School Design</a></li>
+              <li><a href="photography.html">Photography</a></li>
+              <li><a href="playlist.html">Playlist</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+
+      <div id="photoGrid">
+
+        <a href="https://farm6.staticflickr.com/5178/5462779252_be2bff104c_b.jpg" class="lightbox" title="my caption">
+          <img id="photoimages1" class="photoimages" src="https://farm6.staticflickr.com/5178/5462779252_be2bff104c_b.jpg">
+            <p id="photocaption1" class="photocaptions">This is a caption</p>
+          </a>
+
+
+
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script>
+        $(document).ready(function(){
+      //all js goes in here
+          $('.lightbox').lightbox();
+
+          $(".photocaptions").hide();
+
+          $("#photoimages1").mouseenter(function(){
+            $("#photocaption1").show();
+          });
+
+          $("#photoimages1").mouseleave(function(){
+            $("#photocaption1").hide();
+          });
+
+        });
+    </script>
+</body>
+
+
+</html>

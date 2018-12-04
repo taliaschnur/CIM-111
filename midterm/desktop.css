@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 
-
+header{margin-top: auto;}
 
 
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
@@ -28,3 +28,8 @@ h1{font-family: 'Raleway', sans-serif;
   grid-area: col2;
   height: auto;
 }
+#grid3{
+  display: grid;
+  grid-template-areas: "col3 col4";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;

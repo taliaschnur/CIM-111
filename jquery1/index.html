@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>Java</title>
+<meta charset="UTF-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="desktop.css">
+<link rel="stylesheet" href="mobil.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+
+.images{
+  width: 200px;
+  display: block;
+}
+
+</style>
+<body class="w3-light-grey">
+  <header class="w3-container w3-center w3-padding-32">
+<h1><b>How to Make World's Best Grilled Cheese</b></h1>
+
+<h2>Step 1</h2>
+<img class="images" id="step1" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
+
+<p id="instruction1">Get your ingredients together.</p>
+
+<h2>Step 2</h2>
+<img class="images" id="step2" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
+
+
+<p id="instruction2"> Heat up the pan, melt the butter.</p>
+
+<h2>Step 3</h2>
+<img class="images" id="step1" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
+
+
+<p id="instruction1">Place cheese sandwich on to melted butter.</p>
+
+<h2>Step 4</h2>
+<img class="images" id="step1" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
+
+<p id="instruction1">Cook until cheese is melted and bread is golden brown.</p>
+
+<h2>Step 5</h2>
+<img class="images" id="step1" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
+
+<p id="instruction1">Enjoy!</p>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+  //all js goes in here
+      $("body").css("background-color", "aqua");
+
+      $("#instruction1").hide();
+
+      $("#step1").mouseenter(function(){
+        $("#instruction1").show();
+      });
+
+      $("#step1").mouseleave(function(){
+        $("#instruction1").hide();
+      });
+
+      $("#instruction2").hide();
+
+      $("#step2").mouseenter(function(){
+        $("#instruction2").show();
+      });
+
+      $("#step2").mouseleave(function(){
+        $("#instruction2").hide();
+      });
+
+    });
+</script>
+</body>
+</header>
+
+</body>
