@@ -20,15 +20,15 @@
 
 <body>
     <header>
-        <h1>Zevensuy Rodriguez</h1>
+        <h1>Digital Photography</h1>
         <nav>
           <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="writing.html">Writing</a></li>
-              <li><a href="persondesign.html">Person Design</a></li>
+              <li><a href="iphonephotography.html">iPhone Photography</a></li>
+              <li><a href="persondesign.html">Personal Design</a></li>
               <li><a href="schooldesign.html">School Design</a></li>
               <li><a href="photography.html">Photography</a></li>
-              <li><a href="playlist.html">Playlist</a></li>
+              <li><a href="playlist.html">Playlists</a></li>
           </ul>
         </nav>
     </header>
@@ -37,12 +37,30 @@
 
       <div id="photoGrid">
 
-        <a href="https://farm6.staticflickr.com/5178/5462779252_be2bff104c_b.jpg" class="lightbox" title="my caption">
-          <img id="photoimages1" class="photoimages" src="https://farm6.staticflickr.com/5178/5462779252_be2bff104c_b.jpg">
-            <p id="photocaption1" class="photocaptions">This is a caption</p>
+        <a href="images/waterdrops.jpg" class="lightbox" title="my caption">
+          <img id="photoimages1" class="photoimages" src="images/waterdrops.jpg" width="300px">
+            <p id="photocaption1" class="photocaptions">Water falls as Lilly Howes gets ready for bed.</p>
           </a>
-
-
+          <a href="images/hallway.jpg" class="lightbox" title="my caption">
+            <img id="photoimages2" class="photoimages" src="images/hallway.jpg">
+              <p id="photocaption2" class="photocaptions">A dimly lit hallway of Eaton Residential College looks eery.</p>
+            </a>
+            <a href="images/turt.jpg" class="lightbox" title="my caption">
+              <img id="photoimages3" class="photoimages" src="images/turt.jpg" width="300px">
+                <p id="photocaption3" class="photocaptions">A turtle looks on, standing on a rock mid-Lake Osceola</p>
+              </a>
+              <a href="images/Lightspic.jpg" class="lightbox" title="my caption">
+                <img id="photoimages4" class="photoimages" src="images/Lightspic.jpg" width="300px">
+                  <p id="photocaption4" class="photocaptions">Blurred Christmas lights. .</p>
+                </a>
+                <a href="images/lillysleep.jpg" class="lightbox" title="my caption">
+                  <img id="photoimages5" class="photoimages" src="images/lillysleep.jpg" width="300px">
+                    <p id="photocaption5" class="photocaptions">After a long day, Lilly retires to her bed.</p>
+                  </a>
+                  <a href="images/Alexyspic.jpg" class="lightbox" title="my caption">
+                    <img id="photoimages6" class="photoimages" src="images/Alexyspic.jpg" width="300px">
+                      <p id="photocaption6" class="photocaptions">Alexys poses in her Coachella Sweatshirt.</p>
+                    </a>
 
         </div>
 
@@ -67,6 +85,43 @@
           $("#photoimages1").mouseleave(function(){
             $("#photocaption1").hide();
           });
+
+          $("#photoimages2").mouseenter(function(){
+            $("#photocaption2").show();
+          });
+
+          $("#photoimages2").mouseleave(function(){
+            $("#photocaption2").hide();
+          });
+          $("#photoimages3").mouseenter(function(){
+            $("#photocaption3").show();
+          });
+
+          $("#photoimages3").mouseleave(function(){
+            $("#photocaption3").hide();
+          });
+          $("#photoimages4").mouseenter(function(){
+            $("#photocaption4").show();
+          });
+
+          $("#photoimages4").mouseleave(function(){
+            $("#photocaption4").hide();
+          });
+          $("#photoimages5").mouseenter(function(){
+            $("#photocaption5").show();
+          });
+
+          $("#photoimages5").mouseleave(function(){
+            $("#photocaption5").hide();
+          });
+          $("#photoimages6").mouseenter(function(){
+            $("#photocaption6").show();
+          });
+
+          $("#photoimages6").mouseleave(function(){
+            $("#photocaption6").hide();
+          });
+
 
         });
     </script>

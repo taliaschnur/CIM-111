@@ -34,20 +34,20 @@
 <p id="instruction2"> Heat up the pan, melt the butter.</p>
 
 <h2>Step 3</h2>
-<img class="images" id="step1" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
+<img class="images" id="step3" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
 
 
-<p id="instruction1">Place cheese sandwich on to melted butter.</p>
+<p id="instruction3">Place cheese sandwich on to melted butter.</p>
 
 <h2>Step 4</h2>
-<img class="images" id="step1" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
+<img class="images" id="step4" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
 
-<p id="instruction1">Cook until cheese is melted and bread is golden brown.</p>
+<p id="instruction4">Cook until cheese is melted and bread is golden brown.</p>
 
 <h2>Step 5</h2>
-<img class="images" id="step1" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
+<img class="images" id="step5" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
 
-<p id="instruction1">Enjoy!</p>
+<p id="instruction5">Enjoy!</p>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -74,7 +74,40 @@
 
       $("#step2").mouseleave(function(){
         $("#instruction2").hide();
+
       });
+      $("#instruction3").hide();
+
+      $("#step3").mouseenter(function(){
+        $("#instruction3").show();
+      });
+
+      $("#step3").mouseleave(function(){
+        $("#instruction3").hide();
+
+      });
+      $("#instruction4").hide();
+
+      $("#step4").mouseenter(function(){
+        $("#instruction4").show();
+      });
+
+      $("#step4").mouseleave(function(){
+        $("#instruction4").hide();
+
+
+        $("#instruction5").hide();
+
+        $("#step5").mouseenter(function(){
+          $("#instruction5").show();
+        });
+
+        $("#step5").mouseleave(function(){
+          $("#instruction5").hide();
+
+        });
+      });
+
 
     });
 </script>

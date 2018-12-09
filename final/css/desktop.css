@@ -1,13 +1,25 @@
 header {
     width: 80%;
-    height: 100px;
-    background-color: coral;
+    height: 110px;
+    background-color: black;
     margin: 0 auto;
     text-align: center;
 }
+h1{
+  font-family: sans-serif;
+  color: white
+}
+h2{
+  text-align: center;
+  font-family: sans-serif;
+}
+p{
+  text-align: center;
 
+  font-family: sans-serif;
+}
 nav{
-  width: 475px;
+  width: 550px;
   height: 50px;
   background-color: black;
   margin: 0 auto;
@@ -26,8 +38,8 @@ nav ul li{
 nav ul li a{
   text-decoration: none;
   color: white;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 11px;
+  font-family: sans-serif;
 }
 
 nav ul li a:hover{
@@ -36,20 +48,21 @@ nav ul li a:hover{
 
 main {
     width: 80%;
-    height: 600px;
-    background-color: aliceblue;
+    height: 1100px;
+    background-color: ghostwhite;
     margin: 0 auto;
 }
 
 footer {
     width: 80%;
     height: 50px;
-    background-color: coral;
+    background-color: black;
     margin: 0 auto;
 }
 
 .photoimages{
-  width: 150px;
+  width: 350px;
+  height: auto;
   display: block;
   margin: 0 auto;
 }

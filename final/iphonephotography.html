@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Our nicely designed website</title>
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 600px)">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
+<!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+
+    <link rel="stylesheet" href="js/lightbox.css">
+
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Schnur Photography</h1>
+        <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="iphonephotography.html">iPhone Photography</a></li>
+              <li><a href="persondesign.html">Personal Design</a></li>
+              <li><a href="schooldesign.html">School Design</a></li>
+              <li><a href="photography.html">Photography</a></li>
+              <li><a href="playlist.html">Playlists</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+
+      <div id="photoGrid">
+
+        <a href="images/lillytara.jpg" class="lightbox" title="my caption">
+          <img id="photoimages1" class="photoimages" src="images/lillytara.jpg" width="300px">
+            <p id="photocaption1" class="photocaptions">Miami Pride has everyone feeling a little gay!.</p>
+          </a>
+          <a href="images/sunsetcampus.jpg" class="lightbox" title="my caption">
+            <img id="photoimages2" class="photoimages" src="images/sunsetcampus.jpg">
+              <p id="photocaption2" class="photocaptions">A beautiful sunset reflecting off of Shalala.</p>
+            </a>
+            <a href="images/timmy.jpg" class="lightbox" title="my caption">
+              <img id="photoimages3" class="photoimages" src="images/timmy.jpg" width="300px">
+                <p id="photocaption3" class="photocaptions">Tim with a cutie pup.</p>
+              </a>
+              <a href="images/parents.jpg" class="lightbox" title="my caption">
+                <img id="photoimages4" class="photoimages" src="images/parents.jpg" width="300px">
+                  <p id="photocaption4" class="photocaptions">My parents enjoy their day in Boston.</p>
+                </a>
+                <a href="images/palm.jpg" class="lightbox" title="my caption">
+                  <img id="photoimages5" class="photoimages" src="images/palm.jpg" width="300px">
+                    <p id="photocaption5" class="photocaptions">A palm tree on the Univeristy of Miami campus.</p>
+                  </a>
+                  <a href="images/oldboat.jpg" class="lightbox" title="my caption">
+                    <img id="photoimages6" class="photoimages" src="images/oldboat.jpg" width="300px">
+                      <p id="photocaption6" class="photocaptions">An old boat rests on the dock of Diamond Cove.</p>
+                    </a>
+
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script>
+        $(document).ready(function(){
+      //all js goes in here
+          $('.lightbox').lightbox();
+
+          $(".photocaptions").hide();
+
+          $("#photoimages1").mouseenter(function(){
+            $("#photocaption1").show();
+          });
+
+          $("#photoimages1").mouseleave(function(){
+            $("#photocaption1").hide();
+          });
+
+          $("#photoimages2").mouseenter(function(){
+            $("#photocaption2").show();
+          });
+
+          $("#photoimages2").mouseleave(function(){
+            $("#photocaption2").hide();
+          });
+          $("#photoimages3").mouseenter(function(){
+            $("#photocaption3").show();
+          });
+
+          $("#photoimages3").mouseleave(function(){
+            $("#photocaption3").hide();
+          });
+          $("#photoimages4").mouseenter(function(){
+            $("#photocaption4").show();
+          });
+
+          $("#photoimages4").mouseleave(function(){
+            $("#photocaption4").hide();
+          });
+          $("#photoimages5").mouseenter(function(){
+            $("#photocaption5").show();
+          });
+
+          $("#photoimages5").mouseleave(function(){
+            $("#photocaption5").hide();
+          });
+          $("#photoimages6").mouseenter(function(){
+            $("#photocaption6").show();
+          });
+
+          $("#photoimages6").mouseleave(function(){
+            $("#photocaption6").hide();
+          });
+
+
+        });
+    </script>
+</body>
+
+
+</html>
