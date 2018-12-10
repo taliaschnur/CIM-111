@@ -1,48 +1,133 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-<title>Java</title>
-<meta charset="UTF-8">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="js/lightbox.css">
+<head>
+    <title>java</title>
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 600px)">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
+<!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
 
-<style>
-
-.images{
-  width: 200px;
-  display: block;
-}
-
-</style>
-<body class="w3-light-grey">
-  <header class="w3-container w3-center w3-padding-32">
-<h1><b>This is my vacation</b></h1>
-
-<a href="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg" class="lightbox" title="my caption">
-
-  <img class="images" id="step1" src="https://c6.staticflickr.com/3/2783/4474431362_d7be8f3a39_o.jpg">
-
-</a>
+    <link rel="stylesheet" href="js/lightbox.css">
 
 
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <h1>Escape to Israel</h1>
+<h6>Photos by Talia Schnur</h6>
+    </header>
+
+    <main>
+
+      <div id="photoGrid">
+
+        <a href="images/iztalia.jpg" class="lightbox" title="my caption">
+          <img id="photoimages4" class="photoimages" src="images/iztalia.jpg" width="300px">
+            <p id="photocaption4" class="photocaptions">Talia sits after a hike in Mitzpe Ramon Crater .</p>
+          </a>
+
+          <a href="images/izcamels.jpg" class="lightbox" title="my caption">
+            <img id="photoimages2" class="photoimages" src="images/izcamels.jpg" width="300px">
+              <p id="photocaption2" class="photocaptions">My classmates ride on camels at the Bedouin tents.</p>
+            </a>
+
+
+          <a href="images/izwall.jpg" class="lightbox" title="my caption">
+            <img id="photoimages5" class="photoimages" src="images/izwall.jpg" width="300px">
+              <p id="photocaption5" class="photocaptions">Women praying at the Western Wall..</p>
+            </a>
 
 
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/lightbox.js"></script>
-<script>
-    $(document).ready(function(){
-  //all js goes in here
-      $('.lightbox').lightbox();
+                <a href="images/izwater.jpg" class="lightbox" title="my caption">
+                  <img id="photoimages6" class="photoimages" src="images/izwater.jpg" width="300px">
+                    <p id="photocaption6" class="photocaptions">Sunset over the Mediterranean Sea.</p>
+                  </a>
 
-    });
-</script>
+                  <a href="images/izcliffs.jpg" class="lightbox" title="my caption">
+                    <img id="photoimages1" class="photoimages" src="images/izcliffs.jpg" width="300px">
+                      <p id="photocaption1" class="photocaptions">Cliffs in the Mitzpe Ramon Crater.</p>
+                    </a>
+
+                  <a href="images/izruins.jpg" class="lightbox" title="my caption">
+                    <img id="photoimages3" class="photoimages" src="images/izruins.jpg" width="300px">
+                      <p id="photocaption3" class="photocaptions">Ancient ruins outside of Jerusalem.</p>
+                    </a>
+
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script>
+        $(document).ready(function(){
+      //all js goes in here
+          $('.lightbox').lightbox();
+
+          $(".photocaptions").hide();
+
+          $("#photoimages1").mouseenter(function(){
+            $("#photocaption1").show();
+          });
+
+          $("#photoimages1").mouseleave(function(){
+            $("#photocaption1").hide();
+          });
+
+          $("#photoimages2").mouseenter(function(){
+            $("#photocaption2").show();
+          });
+
+          $("#photoimages2").mouseleave(function(){
+            $("#photocaption2").hide();
+          });
+          $("#photoimages3").mouseenter(function(){
+            $("#photocaption3").show();
+          });
+
+          $("#photoimages3").mouseleave(function(){
+            $("#photocaption3").hide();
+          });
+          $("#photoimages4").mouseenter(function(){
+            $("#photocaption4").show();
+          });
+
+          $("#photoimages4").mouseleave(function(){
+            $("#photocaption4").hide();
+          });
+          $("#photoimages5").mouseenter(function(){
+            $("#photocaption5").show();
+          });
+
+          $("#photoimages5").mouseleave(function(){
+            $("#photocaption5").hide();
+          });
+          $("#photoimages6").mouseenter(function(){
+            $("#photocaption6").show();
+          });
+
+          $("#photoimages6").mouseleave(function(){
+            $("#photocaption6").hide();
+          });
+
+
+        });
+    </script>
 </body>
-</header>
 
-</body>
+
+</html>
